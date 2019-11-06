@@ -1,11 +1,11 @@
 const express = require('express');
 
-// const accounts = require('./routes/accounts.routes.js');
+const cars = require('./routes/cars.routes.js');
 
 const server = express();
 
 server.use(express.json());
 
-// server.use('/api/accounts', accounts);
+server.use('/api/cars', cars);
 
 module.exports = server;
